@@ -5,7 +5,7 @@ region = "ap-south-1"
 resource "aws_instance" "one" {
 count = 4
 ami = "ami-01a00762f46d584a1"
-instance_type = "t3.micro"
+instance_type = "c7i-flex.large"
 key_name = "anisbler"
 vpc_security_group_ids = ["sg-0695ca6efe7293e4f"]
 tags = {
